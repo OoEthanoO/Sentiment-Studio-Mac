@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810219F62BBD982C00F16854 /* AppVersionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810219F52BBD982C00F16854 /* AppVersionProvider.swift */; };
+		810A50AE2BBAF556006E6AE0 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A50AD2BBAF556006E6AE0 /* AlertView.swift */; };
+		813493E62BC2C58A005A6B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813493E52BC2C58A005A6B85 /* ViewController.swift */; };
+		813493E82BC2C648005A6B85 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813493E72BC2C648005A6B85 /* CameraView.swift */; };
 		8135DDA52BB8E24F0076F543 /* Sentiment_StudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135DDA42BB8E24F0076F543 /* Sentiment_StudioApp.swift */; };
 		8135DDA72BB8E24F0076F543 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135DDA62BB8E24F0076F543 /* ContentView.swift */; };
-		8135DDA92BB8E24F0076F543 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135DDA82BB8E24F0076F543 /* Item.swift */; };
 		8135DDAB2BB8E24F0076F543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8135DDAA2BB8E24F0076F543 /* Assets.xcassets */; };
 		8135DDAE2BB8E24F0076F543 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8135DDAD2BB8E24F0076F543 /* Preview Assets.xcassets */; };
 		8135DDB92BB8E2500076F543 /* Sentiment_StudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135DDB82BB8E2500076F543 /* Sentiment_StudioTests.swift */; };
 		8135DDC32BB8E2500076F543 /* Sentiment_StudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135DDC22BB8E2500076F543 /* Sentiment_StudioUITests.swift */; };
 		8135DDC52BB8E2500076F543 /* Sentiment_StudioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135DDC42BB8E2500076F543 /* Sentiment_StudioUITestsLaunchTests.swift */; };
+		814FD8AB2BC6251F0046C8FF /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814FD8AA2BC6251F0046C8FF /* AboutView.swift */; };
+		816AE1BB2BC171E400E8052A /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AE1BA2BC171E400E8052A /* TitleView.swift */; };
+		81D5CF112BBD85170017A20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D5CF102BBD85170017A20F /* AppDelegate.swift */; };
+		81ECED962BB9C23100ED86BA /* LSTMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECED952BB9C23100ED86BA /* LSTMView.swift */; };
+		81F21B4D2BBDD45B005B00EE /* VersionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F21B4C2BBDD45B005B00EE /* VersionHistoryView.swift */; };
+		81F21B512BBDD57D005B00EE /* SpaceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F21B502BBDD57D005B00EE /* SpaceTextView.swift */; };
+		81F7967A2BC08C27004A6813 /* EmotiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F796792BC08C27004A6813 /* EmotiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		810219F52BBD982C00F16854 /* AppVersionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionProvider.swift; sourceTree = "<group>"; };
+		810A50AD2BBAF556006E6AE0 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		8124D85F2BC22C9000D2D205 /* Sentiment-Studio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sentiment-Studio-Info.plist"; sourceTree = SOURCE_ROOT; };
+		813493E52BC2C58A005A6B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		813493E72BC2C648005A6B85 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		8135DDA12BB8E24F0076F543 /* Sentiment Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sentiment Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8135DDA42BB8E24F0076F543 /* Sentiment_StudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment_StudioApp.swift; sourceTree = "<group>"; };
 		8135DDA62BB8E24F0076F543 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8135DDA82BB8E24F0076F543 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8135DDAA2BB8E24F0076F543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8135DDAD2BB8E24F0076F543 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8135DDAF2BB8E24F0076F543 /* Sentiment_Studio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sentiment_Studio.entitlements; sourceTree = "<group>"; };
@@ -47,6 +61,13 @@
 		8135DDBE2BB8E2500076F543 /* Sentiment StudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sentiment StudioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8135DDC22BB8E2500076F543 /* Sentiment_StudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment_StudioUITests.swift; sourceTree = "<group>"; };
 		8135DDC42BB8E2500076F543 /* Sentiment_StudioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment_StudioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		814FD8AA2BC6251F0046C8FF /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		816AE1BA2BC171E400E8052A /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		81D5CF102BBD85170017A20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81ECED952BB9C23100ED86BA /* LSTMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSTMView.swift; sourceTree = "<group>"; };
+		81F21B4C2BBDD45B005B00EE /* VersionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionHistoryView.swift; sourceTree = "<group>"; };
+		81F21B502BBDD57D005B00EE /* SpaceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTextView.swift; sourceTree = "<group>"; };
+		81F796792BC08C27004A6813 /* EmotiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +118,23 @@
 		8135DDA32BB8E24F0076F543 /* Sentiment Studio */ = {
 			isa = PBXGroup;
 			children = (
+				8124D85F2BC22C9000D2D205 /* Sentiment-Studio-Info.plist */,
+				810A50AD2BBAF556006E6AE0 /* AlertView.swift */,
 				8135DDA42BB8E24F0076F543 /* Sentiment_StudioApp.swift */,
 				8135DDA62BB8E24F0076F543 /* ContentView.swift */,
-				8135DDA82BB8E24F0076F543 /* Item.swift */,
 				8135DDAA2BB8E24F0076F543 /* Assets.xcassets */,
 				8135DDAF2BB8E24F0076F543 /* Sentiment_Studio.entitlements */,
 				8135DDAC2BB8E24F0076F543 /* Preview Content */,
+				81ECED952BB9C23100ED86BA /* LSTMView.swift */,
+				81D5CF102BBD85170017A20F /* AppDelegate.swift */,
+				810219F52BBD982C00F16854 /* AppVersionProvider.swift */,
+				81F21B4C2BBDD45B005B00EE /* VersionHistoryView.swift */,
+				81F21B502BBDD57D005B00EE /* SpaceTextView.swift */,
+				81F796792BC08C27004A6813 /* EmotiView.swift */,
+				816AE1BA2BC171E400E8052A /* TitleView.swift */,
+				813493E52BC2C58A005A6B85 /* ViewController.swift */,
+				813493E72BC2C648005A6B85 /* CameraView.swift */,
+				814FD8AA2BC6251F0046C8FF /* AboutView.swift */,
 			);
 			path = "Sentiment Studio";
 			sourceTree = "<group>";
@@ -262,9 +294,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D5CF112BBD85170017A20F /* AppDelegate.swift in Sources */,
+				813493E82BC2C648005A6B85 /* CameraView.swift in Sources */,
+				810A50AE2BBAF556006E6AE0 /* AlertView.swift in Sources */,
+				81ECED962BB9C23100ED86BA /* LSTMView.swift in Sources */,
+				813493E62BC2C58A005A6B85 /* ViewController.swift in Sources */,
+				81F7967A2BC08C27004A6813 /* EmotiView.swift in Sources */,
+				81F21B4D2BBDD45B005B00EE /* VersionHistoryView.swift in Sources */,
+				810219F62BBD982C00F16854 /* AppVersionProvider.swift in Sources */,
+				814FD8AB2BC6251F0046C8FF /* AboutView.swift in Sources */,
+				81F21B512BBDD57D005B00EE /* SpaceTextView.swift in Sources */,
 				8135DDA72BB8E24F0076F543 /* ContentView.swift in Sources */,
-				8135DDA92BB8E24F0076F543 /* Item.swift in Sources */,
 				8135DDA52BB8E24F0076F543 /* Sentiment_StudioApp.swift in Sources */,
+				816AE1BB2BC171E400E8052A /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,19 +467,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Sentiment Studio/Sentiment_Studio.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_ASSET_PATHS = "\"Sentiment Studio/Preview Content\"";
+				DEVELOPMENT_TEAM = J679C73527;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sentiment-Studio-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows the user to get the emotion of their face using an AI model";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ethanyanxu.Sentiment-Studio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -451,19 +498,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Sentiment Studio/Sentiment_Studio.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_ASSET_PATHS = "\"Sentiment Studio/Preview Content\"";
+				DEVELOPMENT_TEAM = J679C73527;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sentiment-Studio-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allows the user to get the emotion of their face using an AI model";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ethanyanxu.Sentiment-Studio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -477,7 +529,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 30;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -495,7 +547,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 30;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -512,7 +564,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 30;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ethanyanxu.Sentiment-StudioUITests";
@@ -528,7 +580,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 30;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ethanyanxu.Sentiment-StudioUITests";

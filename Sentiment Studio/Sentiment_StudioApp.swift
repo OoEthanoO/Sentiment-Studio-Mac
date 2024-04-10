@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct Sentiment_StudioApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -28,5 +30,19 @@ struct Sentiment_StudioApp: App {
             ContentView()
         }
         .modelContainer(sharedModelContainer)
+        .commands {
+            CommandGroup(replacing: CommandGroupPlacement.appInfo) {
+                Button(action: {
+                    appDelegate.showAboutPanel()
+                }) {
+                    Text("About Sentiment Studio")
+                }
+            }
+        }
+        
+        Window("Version History", id: "version-history") {
+            VersionHistoryView()
+        }
+        .windowResizability(.contentSize)
     }
 }
