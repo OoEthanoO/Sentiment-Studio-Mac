@@ -42,10 +42,10 @@ class ViewController: NSViewController, AVCapturePhotoCaptureDelegate {
         cameraView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
         NSLayoutConstraint.activate([
-            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            imageView.topAnchor.constraint(equalTo: view.topAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: 100),
-            imageView.heightAnchor.constraint(equalToConstant: 100)
+            imageView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            imageView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            imageView.heightAnchor.constraint(equalToConstant: 200),
+            imageView.widthAnchor.constraint(equalToConstant: 200)
         ])
         
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -109,7 +109,7 @@ class ViewController: NSViewController, AVCapturePhotoCaptureDelegate {
     }
     
     func sendImageData(imageData: Data) {
-        let urlString = "http://127.0.0.1:3000/video_feed"
+        let urlString = "https://sentiment-studio-api.loca.lt/video_feed"
         guard let url = URL(string: urlString) else { return }
         
         var request = URLRequest(url: url)
@@ -163,7 +163,21 @@ class ViewController: NSViewController, AVCapturePhotoCaptureDelegate {
                     }
                     
                     DispatchQueue.main.async {
-                        self.imageView.image = receivedImage
+                        let targetSize = NSSize(width: 1000, height: 1000)
+                        let sourceRect = NSRect(x: (receivedImage.size.width - targetSize.width) / 2,
+                                                y: (receivedImage.size.height - targetSize.height) / 2,
+                                                width: targetSize.width,
+                                                height: targetSize.height)
+
+                        let newImage = NSImage(size: targetSize)
+                        newImage.lockFocus()
+                        receivedImage.draw(in: NSRect(origin: .zero, size: targetSize),
+                                           from: sourceRect,
+                                           operation: .copy,
+                                           fraction: 1.0)
+                        newImage.unlockFocus()
+
+                        self.imageView.image = newImage
                     }
                 } catch {
                     print("Failed to parse received data into JSON: \(error)")
@@ -172,4 +186,10 @@ class ViewController: NSViewController, AVCapturePhotoCaptureDelegate {
         }
         task.resume()
     }
+}
+
+#Preview {
+    let vc = ViewController()
+    
+    return vc
 }
