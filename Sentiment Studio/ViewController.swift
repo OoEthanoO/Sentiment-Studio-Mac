@@ -42,8 +42,8 @@ class ViewController: NSViewController, AVCapturePhotoCaptureDelegate {
         cameraView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
         NSLayoutConstraint.activate([
-            imageView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            imageView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: cameraView.trailingAnchor, constant: 100),
+            imageView.topAnchor.constraint(equalTo: cameraView.topAnchor),
             imageView.heightAnchor.constraint(equalToConstant: 200),
             imageView.widthAnchor.constraint(equalToConstant: 200)
         ])
