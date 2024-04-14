@@ -39,7 +39,7 @@ struct LSTMView: View {
     
     func sendSentimentRequest(text: String) {
         if text.isEmpty {
-            self.sentiment = "Please enter text";
+            self.sentiment = "Please enter text"
             self.probabilities = [0.0, 0.0, 0.0]
             return
         }
